@@ -50,3 +50,76 @@
     width: 240px;
     height: 50px;
 }
+
+.intro-wrapper {
+    background-color: rgb(101, 165, 42);
+    border: 1px solid black 5px 0 0;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+    grid-template-areas: 'todo-column Analysis-column development-column testing-column Done-column';
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.s1 {
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.Analysis-column {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
+    grid-template-areas: 'doing-column done-column';
+    grid-area: Analysis-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.development-column {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
+    grid-template-areas: 'doing-column done-column';
+    grid-area: development-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.testing-column {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
+    grid-template-areas: 'doing-column done-column';
+    grid-area: testing-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.todo-column {
+    grid-area: todo-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Done-column {
+    grid-area: Done-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.doing-column {
+    grid-area: doing-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.done-column {
+    grid-area: done-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
