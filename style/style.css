@@ -1,7 +1,52 @@
 @font-face {
     font-family: 'bold';
-    src: url("../font/open-sans-bold/OpenSans-Bold.eot") format("embedded-opentype"),
-         url("../font/open-sans-bold/OpenSans-Bold.svg") format("svg"),
-         url("../font/open-sans-bold/OpenSans-Bold.ttf") format("truetype"),
-         url("../font/open-sans-bold/OpenSans-Bold.woff") format("woff"); }
+    src: url("../font/open-sans-bold/OpenSans-Bold.eot") format("embedded-opentype"), url("../font/open-sans-bold/OpenSans-Bold.svg") format("svg"), url("../font/open-sans-bold/OpenSans-Bold.ttf") format("truetype"), url("../font/open-sans-bold/OpenSans-Bold.woff") format("woff");
+}
 
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(231, 226, 221);
+    z-index: 1;
+    font-family: 'bold', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.navbar-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 20px;
+    padding: top 15px;
+}
+
+.form-inline {
+    justify-content: center;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+}
+
+.form-control {
+    width: 240px;
+    height: 50px;
+}
