@@ -52,14 +52,11 @@
 }
 
 .intro-wrapper {
-    background-color: rgb(101, 165, 42);
+    background-color: rgb(240, 255, 226);
     border: 1px solid black 5px 0 0;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
-    grid-template-areas: 'todo-column Analysis-column development-column testing-column Done-column';
 }
 
 .main-container {
@@ -74,52 +71,48 @@
 }
 
 .Analysis-column {
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
-    grid-template-areas: 'doing-column done-column';
-    grid-area: Analysis-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px black solid;
+    justify-content: center;
 }
 
 .development-column {
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
-    grid-template-areas: 'doing-column done-column';
-    grid-area: development-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px black solid;
 }
 
 .testing-column {
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
-    grid-template-areas: 'doing-column done-column';
-    grid-area: testing-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px black solid;
 }
 
 .todo-column {
     grid-area: todo-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px black solid;
 }
 
 .Done-column {
     grid-area: Done-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px black solid;
 }
 
-.doing-column {
+.col-5 {
     grid-area: doing-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px black solid;
 }
 
-.done-column {
+.col-5 {
     grid-area: done-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border: 1px black solid;
 }
